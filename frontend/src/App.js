@@ -1,6 +1,7 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Portfolio from "@/pages/Portfolio";
+import Popup from "./components/popup";
 
 function App() {
   return (
