@@ -43,6 +43,8 @@ export const NODES = [
     year: 2026,
     kind: "role",
     period: "Aug 2026 — Oct 2026",
+    badge: "Two Month Internship",
+    cardTag: "intern",
     headline: "Intern · Project Management Team, Zoho Corporation",
     problem: "The internship moved from Java problem solving to building an application end to end, then to understanding how it is monitored and supported once it is running.",
     role: "Built a Food Delivery System in Java, first as a console application and then as a web application on Servlets and Apache Tomcat, with database integration, authentication, restaurant specific menus and booking management. Registered it as a monitor in Zoho Applications Manager with alarms configured. Worked on the Enterprise Monitor Provision Engine, integrating ServiceDesk Plus and Applications Manager through an Ember.js frontend and Java backend APIs.",
