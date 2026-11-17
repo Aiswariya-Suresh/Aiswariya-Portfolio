@@ -5,10 +5,10 @@ export const PROFILE_SUMMARY = {
   classification: "Emerging Multi-Domain AI Practitioner",
   confidence: "HIGH",
   clusters: [
-    { name: "AI / NLP", weight: 92, color: "pink" },
-    { name: "Full-Stack", weight: 84, color: "mint" },
-    { name: "DevOps / Infra", weight: 76, color: "lavender" },
-    { name: "Data / Research", weight: 70, color: "blue" },
+    { name: "Full-Stack", weight: 90, color: "mint" },
+    { name: "AI / NLP", weight: 88, color: "pink" },
+    { name: "DevOps / Infra", weight: 86, color: "lavender" },
+    { name: "Data / Research", weight: 72, color: "blue" },
     { name: "Leadership", weight: 65, color: "yellow" },
   ],
   signals: {
