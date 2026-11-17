@@ -258,7 +258,7 @@ function ProjectsGrid({ onOpen }) {
               </span>
               {p.badge && (
                 <span className="chip" style={{ background: "#FDF2C8", fontSize: "9px" }}>
-                  finalist
+                  {p.cardTag || "finalist"}
                 </span>
               )}
             </div>
