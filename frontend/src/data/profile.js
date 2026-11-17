@@ -6,7 +6,7 @@ export const PROFILE = {
   handle: "aiswariya",
   email: "aiswariyasuresh1@gmail.com",
   location: "Tamil Nadu, India",
-  tagline: "AI & Full-Stack Developer — Building Intelligent Systems with LLMs, NLP & Agentic AI",
+  tagline: "Full Stack & DevOps Engineer and AI Practitioner — Building Dependable Systems and Intelligent Applications",
   subtagline: "Transforming AI research into practical, scalable applications that solve real-world problems.",
   classification: "Emerging Multi-Domain AI Practitioner",
   syntheticScore: 87,
@@ -35,6 +35,22 @@ export const NODES = [
   { id: "self", label: "Aiswariya S", category: "hub", weight: 22, year: 2024, kind: "hub" },
 
   // Experience
+  {
+    id: "zoho",
+    label: "Zoho · Intern",
+    category: "fullstack",
+    weight: 14,
+    year: 2026,
+    kind: "role",
+    period: "Aug 2026 — Oct 2026",
+    headline: "Intern · Project Management Team, Zoho Corporation",
+    problem: "The internship moved from Java problem solving to building an application end to end, then to understanding how it is monitored and supported once it is running.",
+    role: "Built a Food Delivery System in Java, first as a console application and then as a web application on Servlets and Apache Tomcat, with database integration, authentication, restaurant specific menus and booking management. Registered it as a monitor in Zoho Applications Manager with alarms configured. Worked on the Enterprise Monitor Provision Engine, integrating ServiceDesk Plus and Applications Manager through an Ember.js frontend and Java backend APIs.",
+    tech: ["Java", "Servlets", "Apache Tomcat", "JDBC", "Maven", "REST APIs", "Postman", "Applications Manager", "Ember.js"],
+    challenges: "Login requests returning 404, servlet mapping errors, role specific server connection failures and existing database data not showing up.",
+    outcomes: "Fixed duplicate entries in previous bookings and menu items from different restaurants appearing together. The finished web app ran as a monitored application with alarms.",
+    learnings: "Failures can sit anywhere between the browser and the database, so tracing the full request flow finds them fastest. Understanding an existing enterprise project, its dependencies, packaging and versioning, comes before changing it.",
+  },
   {
     id: "wice",
     label: "WICE · DevOps",
@@ -72,22 +88,6 @@ export const NODES = [
     learnings: "Communication is half the engineering. Asking the second question saves the third refactor.",
   },
 
-  {
-    id: "zoho",
-    label: "Zoho · Intern",
-    category: "fullstack",
-    weight: 14,
-    year: 2026,
-    kind: "role",
-    period: "Aug 2026 — Oct 2026",
-    headline: "Intern · Project Management Team, Zoho Corporation",
-    problem: "The internship moved from Java problem solving to building an application end to end, then to understanding how it is monitored and supported once it is running.",
-    role: "Built a Food Delivery System in Java, first as a console application and then as a web application on Servlets and Apache Tomcat, with database integration, authentication, restaurant specific menus and booking management. Registered it as a monitor in Zoho Applications Manager with alarms configured. Worked on the Enterprise Monitor Provision Engine, integrating ServiceDesk Plus and Applications Manager through an Ember.js frontend and Java backend APIs.",
-    tech: ["Java", "Servlets", "Apache Tomcat", "JDBC", "Maven", "REST APIs", "Postman", "Applications Manager", "Ember.js"],
-    challenges: "Login requests returning 404, servlet mapping errors, role specific server connection failures and existing database data not showing up.",
-    outcomes: "Fixed duplicate entries in previous bookings and menu items from different restaurants appearing together. The finished web app ran as a monitored application with alarms.",
-    learnings: "Failures can sit anywhere between the browser and the database, so tracing the full request flow finds them fastest. Understanding an existing enterprise project, its dependencies, packaging and versioning, comes before changing it.",
-  },
 
   // Projects
   {
@@ -257,6 +257,25 @@ export const NODES = [
   { id: "bert", label: "Sentence-BERT", category: "ai", weight: 7, year: 2025, kind: "skill" },
   { id: "java", label: "Java", category: "fullstack", weight: 8, year: 2026, kind: "skill" },
   { id: "iot", label: "ESP32 / IoT", category: "devops", weight: 7, year: 2026, kind: "skill" },
+
+  // Zoho internship: what was built and learnt
+  { id: "z_fds", label: "Food Delivery System", category: "fullstack", weight: 8, year: 2026, kind: "skill" },
+  { id: "z_pe", label: "Provision Engine", category: "devops", weight: 8, year: 2026, kind: "skill" },
+  { id: "z_servlets", label: "Servlets", category: "fullstack", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_tomcat", label: "Apache Tomcat", category: "fullstack", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_jdbc", label: "JDBC", category: "data", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_pk", label: "Primary Keys", category: "data", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_maven", label: "Maven · JAR", category: "fullstack", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_serial", label: "Serialization", category: "fullstack", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_version", label: "Versioning", category: "devops", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_rest", label: "REST APIs", category: "fullstack", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_postman", label: "Postman", category: "fullstack", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_node", label: "Node.js", category: "frontend", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_ember", label: "Ember.js", category: "frontend", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_http", label: "HTTP / HTTPS · Networking", category: "devops", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_appman", label: "Applications Manager", category: "devops", weight: 7, year: 2026, kind: "skill" },
+  { id: "z_itsm", label: "ServiceDesk · ITSM", category: "devops", weight: 6, year: 2026, kind: "skill" },
+  { id: "z_snow", label: "ServiceNow", category: "devops", weight: 6, year: 2026, kind: "skill" },
 ];
 
 export const LINKS = [
@@ -301,6 +320,31 @@ export const LINKS = [
 
   // Zoho cluster
   { source: "zoho", target: "java" },
+  { source: "zoho", target: "z_fds" },
+  { source: "zoho", target: "z_pe" },
+  { source: "zoho", target: "z_appman" },
+  { source: "zoho", target: "z_itsm" },
+  { source: "zoho", target: "z_http" },
+  { source: "zoho", target: "z_node" },
+  { source: "zoho", target: "z_snow" },
+  { source: "z_fds", target: "java" },
+  { source: "z_fds", target: "z_servlets" },
+  { source: "z_fds", target: "z_tomcat" },
+  { source: "z_fds", target: "z_jdbc" },
+  { source: "z_fds", target: "z_pk" },
+  { source: "z_fds", target: "z_appman" },
+  { source: "z_pe", target: "java" },
+  { source: "z_pe", target: "z_maven" },
+  { source: "z_pe", target: "z_version" },
+  { source: "z_pe", target: "z_serial" },
+  { source: "z_pe", target: "z_ember" },
+  { source: "z_pe", target: "z_itsm" },
+  { source: "z_pe", target: "z_appman" },
+  { source: "z_appman", target: "z_rest" },
+  { source: "z_rest", target: "z_postman" },
+  { source: "z_itsm", target: "z_snow" },
+  { source: "z_pk", target: "sql" },
+  { source: "z_appman", target: "wice" },
 
   // New project clusters
   { source: "gefas", target: "python" },
@@ -326,7 +370,7 @@ export const LINKS = [
 
 export const ANNOTATIONS = [
   { id: "a1", text: "scanning career graph · 10 projects detected", at: 0.02 },
-  { id: "a2", text: "AI/NLP cluster dominance · 38% weight", at: 0.12 },
+  { id: "a2", text: "Software + AI/NLP + DevOps · balanced profile", at: 0.12 },
   { id: "a3", text: "DevOps signature detected · WICE deployment", at: 0.22 },
   { id: "a3b", text: "Enterprise Java exposure · Zoho internship", at: 0.28 },
   { id: "a4", text: "Flagship node identified · Echo Trace AI", at: 0.34 },
