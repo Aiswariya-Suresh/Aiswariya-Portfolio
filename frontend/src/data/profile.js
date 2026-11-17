@@ -72,6 +72,23 @@ export const NODES = [
     learnings: "Communication is half the engineering. Asking the second question saves the third refactor.",
   },
 
+  {
+    id: "zoho",
+    label: "Zoho · Intern",
+    category: "fullstack",
+    weight: 14,
+    year: 2026,
+    kind: "role",
+    period: "Aug 2026 — Oct 2026",
+    headline: "Intern · Project Management Team, Zoho Corporation",
+    problem: "The internship moved from Java problem solving to building an application end to end, then to understanding how it is monitored and supported once it is running.",
+    role: "Built a Food Delivery System in Java, first as a console application and then as a web application on Servlets and Apache Tomcat, with database integration, authentication, restaurant specific menus and booking management. Registered it as a monitor in Zoho Applications Manager with alarms configured. Worked on the Enterprise Monitor Provision Engine, integrating ServiceDesk Plus and Applications Manager through an Ember.js frontend and Java backend APIs.",
+    tech: ["Java", "Servlets", "Apache Tomcat", "JDBC", "Maven", "REST APIs", "Postman", "Applications Manager", "Ember.js"],
+    challenges: "Login requests returning 404, servlet mapping errors, role specific server connection failures and existing database data not showing up.",
+    outcomes: "Fixed duplicate entries in previous bookings and menu items from different restaurants appearing together. The finished web app ran as a monitored application with alarms.",
+    learnings: "Failures can sit anywhere between the browser and the database, so tracing the full request flow finds them fastest. Understanding an existing enterprise project, its dependencies, packaging and versioning, comes before changing it.",
+  },
+
   // Projects
   {
     id: "echotrace",
@@ -178,6 +195,49 @@ export const NODES = [
     link: "https://suresh-s-portfolio-seven.vercel.app/",
   },
 
+  {
+    id: "gefas",
+    label: "GEFAS",
+    category: "data",
+    weight: 13,
+    year: 2026,
+    kind: "project",
+    headline: "Global Supply Chain Telemetry · Anomaly Detection",
+    problem: "Disruptions in a port network are hard to tell apart from normal variation, and harder still to link to weather and geopolitical events.",
+    role: "Course project for ITC1365 Exploratory Data Analysis at KRCE. Built the end to end data science app: analysis, hybrid algorithm, pipeline, web app, tests and documentation.",
+    tech: ["Python", "FastAPI", "React", "Graph Analytics", "Time Series"],
+    decisions: "Combined graph, time series and event layers into one hybrid score (Graph Event Fusion Anomaly Scoring), with a chokepoint risk score and event matching. Used fully synthetic data (32 ports, 55 routes, 731 days, seed 42).",
+    outcomes: "F1 0.901, PR AUC 0.975 and ROC AUC 0.998 on the synthetic data. 40 of 56 real events found significant, with 92.3% attribution accuracy at 70.3% coverage.",
+  },
+  {
+    id: "gpushare",
+    label: "GPUShare",
+    category: "devops",
+    weight: 12,
+    year: 2026,
+    kind: "project",
+    headline: "Fair Share GPU Scheduler for Student ML Workloads",
+    problem: "Shared GPUs need a fair way to divide time between student machine learning workloads.",
+    role: "Cloud computing project. Built the scheduler to cost nothing to run, tested it on a single device first and then across machines.",
+    tech: ["Fair Share Scheduling", "GPU Workloads", "Cloud Computing"],
+    decisions: "Replaced a simple decayed usage scheduler with a more complex algorithm that reads the situation. Later added job dependencies and datasets, replay of real usage data, and a way to verify on real lab hardware.",
+    outcomes: "Evaluated critically, with the weaknesses fixed in the code and the project evaluated again afterwards.",
+  },
+  {
+    id: "maritime",
+    label: "Maritime Border Detection",
+    category: "fullstack",
+    weight: 12,
+    year: 2026,
+    kind: "project",
+    headline: "Smart Maritime Border Detection System for Fishermen",
+    problem: "Fishing boats can cross a maritime boundary by accident.",
+    role: "Team project of four. GPS and geofencing on an ESP32 that classifies a boat as Safe, Warning or Critical against the boundary and sends local and remote alerts, with an Express and React dashboard showing boats and live GPS updates.",
+    tech: ["ESP32", "GPS", "Geofencing", "React", "Express"],
+    challenges: "The boundary was hardcoded in the firmware.",
+    decisions: "Planned a world map on the dashboard where the boundary is pinpointed, editable only by admins or government officials.",
+  },
+
   // Research interests
   { id: "llms", label: "LLMs & Prompt Eng.", category: "research", weight: 10, year: 2026, kind: "research", headline: "LLMs & Prompt Engineering", body: "Structured prompts, role-based prompting, chain-of-thought decomposition, context optimization, evaluation." },
   { id: "agentic", label: "Agentic AI", category: "research", weight: 10, year: 2026, kind: "research", headline: "Agentic AI", body: "Autonomous agents that plan, use tools, retrieve information, and collaborate to solve multi-step tasks." },
@@ -195,6 +255,8 @@ export const NODES = [
   { id: "docker", label: "Docker", category: "devops", weight: 7, year: 2025, kind: "skill" },
   { id: "networkx", label: "NetworkX / GNN", category: "ai", weight: 7, year: 2025, kind: "skill" },
   { id: "bert", label: "Sentence-BERT", category: "ai", weight: 7, year: 2025, kind: "skill" },
+  { id: "java", label: "Java", category: "fullstack", weight: 8, year: 2026, kind: "skill" },
+  { id: "iot", label: "ESP32 / IoT", category: "devops", weight: 7, year: 2026, kind: "skill" },
 ];
 
 export const LINKS = [
@@ -207,6 +269,10 @@ export const LINKS = [
   { source: "self", target: "search" },
   { source: "self", target: "abr" },
   { source: "self", target: "portfolio_client" },
+  { source: "self", target: "zoho" },
+  { source: "self", target: "gefas" },
+  { source: "self", target: "gpushare" },
+  { source: "self", target: "maritime" },
   { source: "self", target: "llms" },
   { source: "self", target: "agentic" },
   { source: "self", target: "rag" },
@@ -233,6 +299,17 @@ export const LINKS = [
   { source: "freelance", target: "python" },
   { source: "freelance", target: "postgres" },
 
+  // Zoho cluster
+  { source: "zoho", target: "java" },
+
+  // New project clusters
+  { source: "gefas", target: "python" },
+  { source: "gefas", target: "fastapi" },
+  { source: "gefas", target: "react" },
+  { source: "gefas", target: "nlp" },
+  { source: "maritime", target: "react" },
+  { source: "maritime", target: "iot" },
+
   // Donna / CRMS / Search
   { source: "donna", target: "python" },
   { source: "donna", target: "postgres" },
@@ -248,9 +325,10 @@ export const LINKS = [
 ];
 
 export const ANNOTATIONS = [
-  { id: "a1", text: "scanning career graph · 7 projects detected", at: 0.02 },
+  { id: "a1", text: "scanning career graph · 10 projects detected", at: 0.02 },
   { id: "a2", text: "AI/NLP cluster dominance · 38% weight", at: 0.12 },
   { id: "a3", text: "DevOps signature detected · WICE deployment", at: 0.22 },
+  { id: "a3b", text: "Enterprise Java exposure · Zoho internship", at: 0.28 },
   { id: "a4", text: "Flagship node identified · Echo Trace AI", at: 0.34 },
   { id: "a5", text: "Multi-signal fusion expertise · semantic + graph + temporal", at: 0.48 },
   { id: "a6", text: "Leadership pattern · Team Lead, 2-node coordination", at: 0.58 },
