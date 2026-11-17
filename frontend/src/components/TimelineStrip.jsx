@@ -4,7 +4,7 @@ const POINTS = [
   { year: "2024", density: 0.18, label: "Foundations" },
   { year: "2025 H1", density: 0.42, label: "Freelance + Web Dev" },
   { year: "2025 H2", density: 0.81, label: "AI / Agentic Focus" },
-  { year: "2026", density: 0.94, label: "Zoho · Echo Trace AI · WICE" },
+  { year: "2026", density: 0.94, label: "Zoho · Echo Trace AI" },
 ];
 
 export default function TimelineStrip() {
