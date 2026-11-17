@@ -6,10 +6,10 @@ export const PROFILE_SUMMARY = {
   confidence: "HIGH",
   clusters: [
     { name: "Full-Stack", weight: 90, color: "mint" },
-    { name: "AI / NLP", weight: 88, color: "pink" },
-    { name: "DevOps / Infra", weight: 86, color: "lavender" },
-    { name: "Data / Research", weight: 72, color: "blue" },
-    { name: "Leadership", weight: 65, color: "yellow" },
+    { name: "AI", weight: 88, color: "pink" },
+    { name: "DevOps / Infra", weight: 72, color: "lavender" },
+    { name: "Data / Research", weight: 77, color: "blue" },
+    { name: "Leadership", weight: 89, color: "yellow" },
   ],
   signals: {
     linguistic_pattern: "Project descriptions show structured problem→decision→outcome framing.",
