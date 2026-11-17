@@ -4,13 +4,13 @@ import { PROFILE_SUMMARY } from "@/data/summary";
 const SELF_NOTE = (
   <>
     <p>
-      I&apos;m Aiswariya — an AI &amp; full-stack developer who likes to be measured by what I build. I work end-to-end: web apps, AI/NLP pipelines, lightweight DevOps, and the connective tissue between them.
+      I&apos;m Aiswariya. I build software and I keep it running, and I build AI systems too. I work end to end: web apps and backends in Java and Python, deployment, monitoring and CI/CD, and NLP and anomaly detection pipelines, plus the connective tissue between them.
     </p>
     <p className="mt-3">
-      What I do well — turning fuzzy problems into structured systems, designing pipelines that combine multiple ML signals, staying close enough to the code to keep things explainable, and thinking carefully about prompt design, agentic workflows, and grounded retrieval.
+      What I do well: turning fuzzy problems into structured systems, tracing a failure through every layer from browser to database, keeping a production platform stable, and designing pipelines that combine several signals while staying close enough to the code to keep things explainable.
     </p>
     <p className="mt-3">
-      I&apos;m at my best when a problem needs both engineering rigor and a research instinct. If that sounds like the kind of work you&apos;re doing, let&apos;s talk.
+      I&apos;m at my best when a problem needs both engineering rigor and a research instinct, whether that means keeping a platform up for thousands of students or detecting coordinated behavior in a network. If that sounds like the kind of work you&apos;re doing, let&apos;s talk.
     </p>
   </>
 );
